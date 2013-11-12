@@ -7,13 +7,71 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.min.js"></script>
-	<script src="js/common.js"></script>
+	<script src="js/calculator.js"></script>
 </head>
 <body>
 <!-- BEGIN .wrap -->
 <section class="wrap">
 	<div class="wrap__in">
-		
+		<div class="calculator">
+			<form action="">
+				<div class="calculator__var">
+					<div class="var-item">
+						<label>
+							<span><b>Пункт отправления: </b></span>
+							<select>
+								<option value="Москва">Москва</option>
+								<option value="Санкт-Петербург" disabled>Санкт-Петербург</option>
+								<option value="Сочи" disabled>Сочи</option>
+								<option value="Казань" disabled>Казань</option>
+							</select>
+						</label>
+					</div>
+					<div class="var-item">
+						<label>
+							<span><b>Пункт назначения: </b></span>
+							<select>
+								<option value="Москва">Москва</option>
+								<option value="Санкт-Петербург">Санкт-Петербург</option>
+								<option value="Сочи">Сочи</option>
+								<option value="Казань">Казань</option>
+							</select>
+						</label>
+					</div>
+					<div class="var-item">
+						<label>
+							<span><b>Вес груза (кг): </b></span>
+							<input class="js-weight" type="text">
+						</label>
+					</div>
+					<div class="var-item">
+						<label>
+							<span><b>Объем (м3): </b></span>
+							<input class="" type="text">
+						</label>
+					</div>
+					<div class="var-item">
+						<label>
+							<span><b>Негабаритный груз: </b></span>
+							<input class="" type="checkbox">
+						</label>
+					</div>
+					<div class="var-item">
+						<label>
+							<span><b>Упаковка: </b></span>
+							<input class="" type="checkbox">
+						</label>
+					</div>
+					<div class="calculate">
+						<input type="submit" value="Расчитать">
+					</div>  
+				</div>
+			</form>
+			<div class="calculator__result">
+				<p>Цена доставки:</p>
+				<span class="js-result">0</span> <span>руб.</span>
+			</div>
+		</div>
 	</div>
 	<div class="push"></div>
 </section>
