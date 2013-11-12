@@ -9,9 +9,11 @@ $(document).ready(function(){
 		var	oversized = 1;
 		var	packing = 0;
 		var packing_price = $("#packing").attr("data-price");
+		// валидация инпута веса
 		if(weight_val == ''){
 			$("#weight").addClass('error');
 		}
+		// валидация инпута обьема
 		if(volume_val == ''){
 			$("#volume").addClass('error');
 		}
