@@ -7,6 +7,7 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.min.js"></script>
+
 	<script src="js/calculator.js"></script>
 </head>
 <body>
@@ -14,12 +15,12 @@
 <section class="wrap">
 	<div class="wrap__in">
 		<div class="calculator">
-			<form action="">
+
 				<div class="calculator__var">
 					<div class="var-item">
 						<label>
 							<span><b>Пункт отправления: </b></span>
-							<select>
+							<select id="from">
 								<option value="Москва">Москва</option>
 								<option value="Санкт-Петербург" disabled>Санкт-Петербург</option>
 								<option value="Сочи" disabled>Сочи</option>
@@ -30,7 +31,7 @@
 					<div class="var-item">
 						<label>
 							<span><b>Пункт назначения: </b></span>
-							<select>
+							<select id="to">
 								<option value="Москва">Москва</option>
 								<option value="Санкт-Петербург">Санкт-Петербург</option>
 								<option value="Сочи">Сочи</option>
@@ -38,38 +39,38 @@
 							</select>
 						</label>
 					</div>
-					<div class="var-item">
+					<div class="js-var-item var-item">
 						<label>
 							<span><b>Вес груза (кг): </b></span>
-							<input class="js-weight" type="text">
+							<input id="weight" type="text">
 						</label>
 					</div>
-					<div class="var-item">
+					<div class="js-var-item var-item">
 						<label>
 							<span><b>Объем (м3): </b></span>
-							<input class="" type="text">
+							<input id="volume" type="text">
 						</label>
 					</div>
 					<div class="var-item">
 						<label>
 							<span><b>Негабаритный груз: </b></span>
-							<input class="" type="checkbox">
+							<input id="oversized" type="checkbox">
 						</label>
 					</div>
 					<div class="var-item">
 						<label>
 							<span><b>Упаковка: </b></span>
-							<input class="" type="checkbox">
+							<input id="packing" data-price="1350" type="checkbox">
 						</label>
 					</div>
 					<div class="calculate">
-						<input type="submit" value="Расчитать">
+						<input type="submit" class="go" value="Расчитать">
 					</div>  
 				</div>
-			</form>
+
 			<div class="calculator__result">
 				<p>Цена доставки:</p>
-				<span class="js-result">0</span> <span>руб.</span>
+				<span id="result">0</span> <span>руб.</span>
 			</div>
 		</div>
 	</div>

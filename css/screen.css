@@ -29,6 +29,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .var-item { margin-bottom: 15px; }
 .var-item input { height: 20px; padding: 0 10px; }
+.var-item input.error { border: 1px solid red; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: inset 0 0 2px 1px red; -moz-box-shadow: inset 0 0 2px 1px red; box-shadow: inset 0 0 2px 1px red; }
 
 .calculate { text-align: center; }
 
